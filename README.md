@@ -1,4 +1,4 @@
-# Salary Predictor App
+# JP App
 
 ## Overview
 The **Salary Predictor App** is a Python-based application that allows users to estimate the average monthly salary for a given job skill using data from **HeadHunter API**. The app fetches job vacancy data, processes salary information, and provides statistical insights into salary ranges.
@@ -90,5 +90,5 @@ Contributions are welcome! If you have improvements or bug fixes, feel free to s
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
-Developed by [Your Name](https://github.com/yourusername).
+Developed by [Baton111](https://github.com/yourusername).
 
