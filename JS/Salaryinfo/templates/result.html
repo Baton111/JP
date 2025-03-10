@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jobs Salary</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="header">
+
+<div class="circle logo">
+    <h1>
+   <a href="{% url 'index'  %}">
+        JS
+   </a>
+</h1>
+</div>
+</div>
+<div class="info">
+    <div class="Project card">
+        <h2>
+            Job Salary—
+        </h2>
+        <p>
+            This project that help answering how many it is they salary. Write skills that you already  obtain then our algorithms will analyze labour market then will answer what salary are you worthy.
+        </p>
+        <p>
+            Value:<span>Russian ruble </span>
+            API & Data: <a href="https://dev.hh.ru/">Headhunter</a>
+        </p>
+    </div>
+    <div class="Aboutme card">
+        <h2>
+            About me —
+        </h2>
+        <h3>
+            Daniil Lapushkin
+        </h3>
+        <p>
+            Location: Dubai
+        </p>
+        <br>
+        <p><a  href="https://github.com/Baton111"><i class="fab fa-github"></i> Github</a></p>
+                <p><a href="Daniil.Lapushkin@gmail.com"><i class="fas fa-envelope"></i> Contact me</a></p>
+
+        <br>
+        <p>
+            © 2025
+        </p>
+
+    </div>
+</div>
+<form class="form" action = "{% url 'result' %}" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn" type="submit">Count salary</button>
+    </form>
+<div class="statistic">
+
+<div class="count circle stat">
+    <p class="stat"> found</p>
+    <span class="stat">{{ count }} RUR</span>
+   <p class="stat"> vacancie</p>
+</div>
+<div class="proceeded circle stat">
+    <p class="stat"> proceeded</p>
+    <span class="stat"> {{ proceeded }} RUR</span>
+    <p class="stat"> vacancie</p>
+</div>
+<div class="min circle stat ">
+ <p class="stat"> min</p>
+    <span class="stat">{{ min }} RUR</span>
+   <p class="stat"> salary</p>
+</div>
+<div class="max circle stat">
+  <p class="stat"> max</p>
+    <span class="stat"> {{ max }} RUR</span>
+  <p class="stat"> salary</p>
+</div>
+<div class="mid circle stat">
+    <p class="stat"> mid</p>
+    <span class="stat">{{ mid }} RUR</span>
+    <p class="stat"> salary</p>
+</div>
+
+</div>
+</body>
+</html>

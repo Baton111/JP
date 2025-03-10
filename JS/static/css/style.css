@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+opacity:0;
+transition:all 2s ease-in-out;
+animation:logo 2s forwards;
+background-color:#18181B;
+color:#A1A1AA;
+ font-family: "Lato", serif;
+ text-align:center;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ height:100vh;
+}
+.header {
+display:flex;
+justify-content:center;
+width:100vw;
+margin-bottom:20px;
+}
+.info{
+display:flex;
+justify-content:center;
+width: 100vw;
+}
+.card{
+width:15vw;
+margin-left:1.5vw;
+background-color:#rgba(255, 255, 255, 0.015);
+box-shadow:
+  0px 4px 10px rgba(255, 255, 255, 0.1),
+  0px 2px 5px rgba(255, 255, 255, 0.2),
+  0 0 0 1px rgba(255, 255, 255, 0.1);
+  padding:16px;
+  border-radius:1px solid  rgba(255, 255, 255, 0.1);
+}
+a{
+color:#A1A1AA;
+text-decoration:none;
+
+}
+.circle{
+background-color:#3B3B3E;
+color:#FFFFFF;
+text-shadow: 2px 2px 2px black;
+border-radius:100px;
+box-sizing:border-box;
+font-size:32px;
+text-align:center;
+display:flex;
+justify-content:center;
+align-items:center;
+width: 200px;
+height: 200px;
+flex-direction:column;
+margin-bottom: 20px;
+position:relative;
+overflow:hidden;
+
+}
+h1{
+padding:0;
+margin:0;
+}
+.stat{
+font-size:18px;
+margin-left: 1vw;
+margin-right: 1vw;
+}
+.statistic{
+margin-top:3vh;
+display:flex;
+justify-content:center;
+}
+.form{
+margin-top:3vh;
+}
+.form label{
+margin-right:0.2vw;
+font-size:16px;
+}
+.form input{
+background-color:#3B3B3E;
+color:#FFFFFF;
+}
+.btn{
+wight:100%;
+background-color:#3B3B3E;
+color:#FFFFFF;
+padding:10px;
+}
+.btn:hover{
+color:black;
+}
+.Project{
+text-align:left;
+}
+.Aboutme{
+text-align:left;
+}
+.stat>p{
+font-size:14px
+
+}
+
+
+
+
+
+
+
+
+
+
+.logo:hover {
+background-color:#FFFFFF;
+color:#3B3B3E;
+}
+
+
+@keyframes logo{
+from{
+
+opacity:0;
+
+}
+to{
+
+opacity:100;
+
+}
+}
